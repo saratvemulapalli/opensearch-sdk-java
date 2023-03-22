@@ -48,6 +48,8 @@ public class ExtensionsInitRequestHandler {
         logger.info("Registering Extension Request received from OpenSearch");
         extensionsRunner.opensearchNode = extensionInitRequest.getSourceNode();
         extensionsRunner.setUniqueId(extensionInitRequest.getExtension().getId());
+        logger.info("ExtensionProto message: {}", extensionInitRequest.getExtensionProto().toString());
+        //extensionInitRequest.getExtensionProto().
         // Successfully initialized. Send the response.
         try {
             return new InitializeExtensionResponse(

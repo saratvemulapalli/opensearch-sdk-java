@@ -118,6 +118,7 @@ dependencies {
     testImplementation("org.opensearch.test:framework:${opensearchVersion}")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:${junitPlatform}")
     requireJavadoc("org.plumelib:require-javadoc:${requireJavadocVersion}")
+    implementation 'com.google.protobuf:protobuf-java:3.22.2'
 }
 
 // this task tests for the presence of javadocs but not the content/tags
